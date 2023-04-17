@@ -1,3 +1,14 @@
+ipipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
 pipeline {
   agent {label 'linux'}
   options {
